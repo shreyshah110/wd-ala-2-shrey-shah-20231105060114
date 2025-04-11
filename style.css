@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+.stadium {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, #2e8b57 70%, #87ceeb 30%);
+  position: relative;
+  overflow: hidden;
+}
+.sun {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, #ffff66, #ffcc00);
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  box-shadow: 0 0 30px 10px #ffd700;
+}
+.flag {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 2.5rem;
+  animation: wave 2s infinite;
+}
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+}
+.batsman {
+  position: absolute;
+  bottom: 80px;
+  left: 150px;
+  width: 60px;
+  height: 160px;
+}
+.batsman::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: #ffe0bd;
+  border-radius: 50%;
+}
+.batsman::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 20px;
+  height: 80px;
+  background: navy;
+}
+.bat {
+  width: 8px;
+  height: 60px;
+  background: #deb887;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  transform-origin: top left;
+}
+.ball {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 500px;
+  left: 1100px;
+}
